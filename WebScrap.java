@@ -18,7 +18,7 @@ public class WebScrap {
 		try {
 			String searchUrl = baseUrl;
 			HtmlPage page = client.getPage(searchUrl);
-//			System.out.println(page.asXml());
+			System.out.println(page.asXml());
 			List<Item> itemList = new ArrayList<>();
 			List<?> placardDiv = page.getByXPath("//*[@class=\"placardContainer\"]/li");
 			if(!placardDiv.isEmpty())
